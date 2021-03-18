@@ -3,6 +3,18 @@
 $card-radius: 15px;
 $color-background-default: hsl(185, 75%, 39%);
 $color-text-default: hsl(0, 0%, 59%);
+$color-text-heading-default: hsl(229, 23%, 23%);
+
+@mixin text-heading-default() {
+  color: $color-text-heading-default;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+@mixin center-text() {
+  display: flex;
+  justify-content: center;
+}
 
 * {
   box-sizing: border-box;
@@ -46,6 +58,26 @@ body {
     margin: 0 auto;
     border-radius: 50%;
     box-shadow: 0 0 0 5px #ffffff;
+  }
+
+  &__name {
+    @include center-text;
+    @include text-heading-default;
+    margin: 27px 0 15px;
+  }
+
+  &__age {
+    display: inline-flex;
+    color: $color-text-default;
+    font-weight: 400;
+    margin-left: 10px
+  }
+
+  &__city {
+    @include center-text;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 28px;
   }
 }
 
