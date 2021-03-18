@@ -1,0 +1,22 @@
+{
+  "name": "fem-profile-card",
+  "version": "0.0.0",
+  "description": "frontendmentor.io challenge profile card",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon -e scss,html --watch index.html --watch ./styles --exec \"npm run build\"",
+    "build": "sass styles/index.scss dist/index.css"
+  },
+  "keywords": [
+    "frontendmentor.io",
+    "profile",
+    "card",
+    "challenge"
+  ],
+  "author": "jairovg",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.7",
+    "sass": "^1.32.8"
+  }
+}
