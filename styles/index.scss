@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
 
+$sm-device: 375px;
 $card-radius: 15px;
 $color-background-default: hsl(185, 75%, 39%);
 $color-text-default: hsl(0, 0%, 59%);
@@ -88,6 +89,12 @@ body {
 
   a {
     color: hsl(228, 45%, 44%);
+  }
+}
+
+@media screen and (min-width: $sm-device) {
+  .profile-card {
+    max-width: 350px;
   }
 }
 
