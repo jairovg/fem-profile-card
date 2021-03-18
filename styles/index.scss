@@ -3,6 +3,7 @@
 $sm-device: 375px;
 $card-radius: 15px;
 $color-background-default: hsl(185, 75%, 39%);
+$color-border-default: hsl(0, 0%, 91%);
 $color-text-default: hsl(0, 0%, 59%);
 $color-text-heading-default: hsl(229, 23%, 23%);
 
@@ -79,6 +80,34 @@ body {
     font-size: 16px;
     font-weight: 400;
     margin-bottom: 28px;
+  }
+
+  &__social {
+    @include center-text;
+    border-top: 1px solid $color-border-default;
+    padding: 30px 30px 28px;
+
+    &-elements {
+      display: flex;
+      justify-content: space-around;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+    }
+
+    &-element {
+      display: grid;
+      text-align: center;
+      font-size: 11px;
+      letter-spacing: 1px;
+    }
+
+    &-counter {
+      @include text-heading-default;
+      letter-spacing: normal;
+      margin-bottom: 10px;
+    }
   }
 }
 
