@@ -10,18 +10,41 @@
   <title>Frontend Mentor | Profile card component</title>
 </head>
 <body>
-  Victor Crest
-  26
-  London
-
-  80K
-  Followers
-
-  803K
-  Likes
-
-  1.4K
-  Photos
+  <section class="profiles">
+    <article class="profile-card">
+      <header class="profile-card__header">
+        <img
+          class="profile-card__image"
+          src="./images/image-victor.jpg"
+          alt="Man with a green jacket and mountains behind him"
+        >
+        <h1 class="profile-card__name">
+          Victor Crest
+          <span
+            class="profile-card__age"
+            aria-label="26 years old"
+          >26</span>
+        </h1>
+        <h2 class="profile-card__city">London</h2>
+      </header>
+      <main class="profile-card__social">
+        <ul class="profile-card__social-elements">
+          <li class="profile-card__social-element">
+            <span class="profile-card__social-counter">80K</span>
+            Followers
+          </li>
+          <li class="profile-card__social-element">
+            <span class="profile-card__social-counter">803K</span>
+            Likes
+          </li>
+          <li class="profile-card__social-element">
+            <span class="profile-card__social-counter">1.4K</span>
+            Photos
+          </li>
+        </ul>
+      </main>
+    </article>
+  </section>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="https://github.com/jairovg">Jairo Valderrama</a>.
