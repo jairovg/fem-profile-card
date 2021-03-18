@@ -1,4 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+$color-background-default: hsl(185, 75%, 39%);
+$color-text-default: hsl(0, 0%, 59%);
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  background-color: $color-background-default;
+  font-size: 16px;
+  font-weight: 400;
+  color: $color-text-default;
+}
+
 .attribution {
+  color: hsl(229, 23%, 23%);
   font-size: 11px;
   text-align: center;
 
