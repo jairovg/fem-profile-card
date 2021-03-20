@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
 
 $sm-device: 375px;
+$md-device: 768px;
 $card-radius: 15px;
 $color-background-default: hsl(185, 75%, 39%);
 $color-border-default: hsl(0, 0%, 91%);
@@ -40,6 +41,31 @@ body {
 .profiles {
   display: flex;
   height: 97%;
+
+  &::before {
+    content: "";
+    background: url('../images/bg-pattern-top.svg') no-repeat;
+    background-position: right bottom;
+    opacity: 0.4;
+    position: absolute;
+    top: -978px;
+    bottom: 43%;
+    left: -978px;
+    right: 52.5%;
+    z-index: -1;
+  }
+
+  &::after {
+    content: "";
+    background: url('../images/bg-pattern-bottom.svg') no-repeat;
+    background-position: left top;
+    position: absolute;
+    top: 43%;
+    bottom: 0;
+    left: 39%;
+    right: 0;
+    z-index: -1;
+  }
 }
 
 .profile-card {
@@ -127,3 +153,15 @@ body {
   }
 }
 
+@media screen and (min-width: $md-device) {
+  .profiles {
+    &::before {
+      opacity: 1;
+    }
+
+    &::after {
+      top: 48%;
+      left: 50%;
+    }
+  }
+}
