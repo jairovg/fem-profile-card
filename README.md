@@ -18,9 +18,9 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ### Screenshot
 
-|![Mobile result](./images/screenshot-mobile.jpg)  |
+|![Mobile result](./images/screenshot-mobile.png)  |
 |--------------------------------------------------|
-|![Desktop result](./images/screenshot-desktop.jpg)|
+|![Desktop result](./images/screenshot-desktop.png)|
 
 ### Links
 
