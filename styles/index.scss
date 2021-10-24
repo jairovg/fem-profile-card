@@ -12,6 +12,7 @@ $color-text-heading-default: hsl(229, 23%, 23%);
   color: $color-text-heading-default;
   font-size: 18px;
   font-weight: 700;
+  line-height: 18.11px;
 }
 
 @mixin center-text() {
@@ -70,15 +71,16 @@ body {
 
 .profile-card {
   width: 100%;
+  max-width: 326px;
   margin: auto;
   background-color: #ffffff;
-  box-shadow: 1px 30px 85px rgba(0,0,0,0.25);
+  box-shadow: 0px 50px 100px -20px rgba(8, 70, 94, 0.504835);
   border-radius: $card-radius;
 
   &__header {
     background: url('../images/bg-pattern-card.svg') no-repeat;
     border-radius: $card-radius $card-radius 0 0;
-    padding-top: 90px;
+    padding-top: 92px;
   }
 
   &__image {
@@ -91,27 +93,29 @@ body {
   &__name {
     @include center-text;
     @include text-heading-default;
-    margin: 27px 0 15px;
+    margin: 24px 0 13px;
   }
 
   &__age {
     display: inline-flex;
     color: $color-text-default;
     font-weight: 400;
-    margin-left: 10px
+    margin-left: 8.5px
   }
 
   &__city {
     @include center-text;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
+    line-height: 14.08px;
+    margin-top: 0;
     margin-bottom: 28px;
   }
 
   &__social {
     @include center-text;
     border-top: 1px solid $color-border-default;
-    padding: 30px 30px 28px;
+    padding: 24px;
 
     &-elements {
       display: flex;
@@ -125,14 +129,15 @@ body {
     &-element {
       display: grid;
       text-align: center;
-      font-size: 11px;
-      letter-spacing: 1px;
+      font-size: 10px;
+      line-height: 10.06px;
+      letter-spacing: 1.5px;
     }
 
     &-counter {
       @include text-heading-default;
       letter-spacing: normal;
-      margin-bottom: 10px;
+      margin-bottom: 9px;
     }
   }
 }
@@ -143,13 +148,7 @@ body {
   text-align: center;
 
   a {
-    color: hsl(228, 45%, 44%);
-  }
-}
-
-@media screen and (min-width: $sm-device) {
-  .profile-card {
-    max-width: 350px;
+    color: hsl(228, 45%, 22%);
   }
 }
 
@@ -163,5 +162,9 @@ body {
       top: 48%;
       left: 50%;
     }
+  }
+
+  .profile-card {
+    max-width: 350px;
   }
 }
